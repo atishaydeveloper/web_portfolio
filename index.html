@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/13d91ddaa8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ain.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#id">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Atishay Jain</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Ashu_image.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>
+                        Hi, I'm Atishay Jain, a passionate data scientist and software developer with a strong interest in Artificial Intelligence, Machine Learning, and web development. Currently based in Indore, India, I am continuously learning and building innovative solutions that bridge technology and real-world applications.</p><br>
+
+<p>With experience in SQL, Python, and web technologies, I have worked on projects ranging from sentiment analysis and crop price prediction to user-friendly platforms for farmers. I’m an avid problem solver and always eager to explore new concepts in data science and AI to create impactful solutions.</p><br>
+
+<p>Beyond my technical pursuits, I’m a dedicated chess player, aspiring to reach a 2000 Elo rating, and I enjoy learning new strategies and sharing insights with my community. My love for continuous learning extends to my fascination with geopolitics, light novels, and music, which provide balance to my technical work.</p><br>
+
+<p>I’m also focused on improving my public speaking skills and managing distractions to boost productivity. Whether it’s building apps, solving coding challenges, or discussing the latest in tech, I’m driven by a desire to constantly grow and make meaningful contributions.</p>
+
+<p>Let’s connect and build something extraordinary together!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>SQL</span><br>Retrieving information to the fullest</li>
+                            <li><span>Data Analysis</span><br>Analysing Data to discover usefull insights</li>
+                            <li><span>Machine Learing</span><br>Training Models to automate and predict results</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Mental Health Prediction</span><br>My project uses machine learning to predict mental health issues by analyzing user sentiment from typed input, enabling early detection and intervention.</li>
+                            <li><span>Govt. Scheme recommendation</span><br>My project recommends government schemes by using machine learning to match user profiles with relevant programs based on their needs and eligibility.</li>
+                            <li><span>Crop Disease Prediction</span><br>My project uses Convolutional Neural Networks (CNN) to predict crop diseases by analyzing images of plants for early detection and intervention.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>B.tech in CSE with specialization in Data Science from Acropolis Institute of Technology & Research</li>
+                            <li><span>2022</span><br>Higher Secondary School Certificate holder in PCM from South Valley International School</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- services -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Predictive Analytics</h2>
+                <p>
+                    Using historical data to forecast future trends and behaviors, aiding in decision-making.
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>               
+                <i class="fa-solid fa-database"></i>      
+                <h2>Database Management</h2>
+                <p>
+                    Designing and maintaining efficient databases to ensure data integrity and accessibility.
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>AI Integration</h2>
+                <p>
+                    Developing and integrating artificial intelligence solutions to enhance existing systems.
+
+                </p>
+                <a href="#">Learn more</a>
+                
+
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- --------------------portfolio-------------- -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/health.png">
+                <div class="layer">
+                    <h3>Mental Health Prediction System</h3>
+                    <p>A mental health prediction system leverages NLP to analyze sentiment, provide feedback, alert healthcare professionals, and connect users to resources for improved emotional well-being.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img src="images/govt.png">
+                <div class="layer">
+                    <h3>Govt. Scheme Recommendation System</h3>
+                    <p>My project creates a government scheme recommendation system for farmers that uses machine learning to match them with relevant resources, enhancing productivity and sustainability.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img src="images/cropD.png">
+                <div class="layer">
+                    <h3>Crop Disease Prediction</h3>
+                    <p>My project develops a crop disease prediction system that uses machine learning and image recognition to identify diseases early, empowering farmers to enhance crop health and productivity sustainably.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+    <!-- ------contact-----------------------  -->
+
+    <div id="id">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Want to collaborate or have a project in mind? Let's connect!</p>
+                    <p><i class="fa-solid fa-envelope"></i></i>atishayj288@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9522041334</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/atishay-jain07/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/the_zealous_atishay/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/atishaydeveloper"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                    <a href="docs/resume00.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright <i class="fa-regular fa-copyright"></i> 10/2024 Atishay Jain 
+        </p>
+    </div>
+ </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9MX3B5PZVARO7vMUEuBbWT38aLGP4vMyfq23fmgHknCShn_aBINh25NJNu2agyAL4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully!!"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
